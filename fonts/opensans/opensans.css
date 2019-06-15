@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'OpenSansNormal';
-    src: local('Open Sans Light'), local('OpenSans-Light'), url('fonts/opensans/opensanslight.woff2') format('woff2'), url('fonts/opensans/opensanslight.woff') format('woff'), url('fonts/opensans/opensanslight.ttf') format('truetype');
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'), local('OpenSans-Light'), url('opensanslight.woff2') format('woff2'), url('opensanslight.woff') format('woff'), url('opensanslight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
@@ -11,8 +11,8 @@
     font-style: italic;
 }
 @font-face {
-    font-family: 'OpenSans400';
-    src: local('Open Sans'), local('OpenSans'), url('fonts/opensans/opensans.woff2') format('woff2'), url('fonts/opensans/opensans.woff') format('woff'), url('fonts/opensans/opensans.ttf') format('truetype');
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'), url('opensans.woff2') format('woff2'), url('opensans.woff') format('woff'), url('opensans.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -57,48 +57,4 @@
     src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'), url('opensansextrabolditalic.woff2') format('woff2'), url('opensansextrabolditalic.woff') format('woff'), url('opensansextrabolditalic.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
-}
-
-#header-top{
-    background: #4cb2cb;
-}
-
-.container{
-    max-width: 1000px;
-    margin: auto;
-}
-
-li{
-    list-style: none;
-}
-#header-top-nav ul{
-    display: flex;
-}
-#header-option{
-    display: flex;
-}
-#header-top .container{ 
-    display: flex;
-    justify-content: space-between;
-}
-
-#header-top{
-    padding: 17px 0;
-}
-#header-top-nav a{
-    text-decoration: none;
-    font-size: 13px;
-    color: #fff;
-    font-family: 'penSans400';
-   
-}
-#header-option #language, #Currency{
-    font-size: 13px;
-    color: #fff;
-    font-family: 'OpenSansNormal';
-}
-#header-option #English, #USD{
-    font-size: 13px;
-    color: #fff;
-    font-family: 'OpenSans400';
 }
