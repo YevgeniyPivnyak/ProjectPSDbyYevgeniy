@@ -1,310 +1,352 @@
-@font-face {
-    font-family: 'OpenSansNormal';
-    src: local('Open Sans Light'), local('OpenSans-Light'), url('fonts/opensans/opensanslight.woff2') format('woff2'), url('fonts/opensans/opensanslight.woff') format('woff'), url('fonts/opensans/opensanslight.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url('opensanslightitalic.woff2') format('woff2'), url('opensanslightitalic.woff') format('woff'), url('opensanslightitalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'OpenSans400';
-    src: local('Open Sans'), local('OpenSans'), url('fonts/opensans/opensans.woff2') format('woff2'), url('fonts/opensans/opensans.woff') format('woff'), url('fonts/opensans/opensans.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Italic'), local('OpenSans-Italic'), url('opensansitalic.woff2') format('woff2'), url('opensansitalic.woff') format('woff'), url('opensansitalic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('opensanssemibold.woff2') format('woff2'), url('opensanssemibold.woff') format('woff'), url('opensanssemibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url('opensanssemibolditalic.woff2') format('woff2'), url('opensanssemibolditalic.woff') format('woff'), url('opensanssemibolditalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('opensansbold.woff2') format('woff2'), url('opensansbold.woff') format('woff'), url('opensansbold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('opensansbolditalic.woff2') format('woff2'), url('opensansbolditalic.woff') format('woff'), url('opensansbolditalic.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('opensansextrabold.woff2') format('woff2'), url('opensansextrabold.woff') format('woff'), url('opensansextrabold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'), url('opensansextrabolditalic.woff2') format('woff2'), url('opensansextrabolditalic.woff') format('woff'), url('opensansextrabolditalic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
-}
-
-#header-top{
-    background: #4cb2cb;
-}
-
-.container{
-    max-width: 1000px;
-    margin: auto;
-}
-
-li{
-    list-style: none;
-}
-#header-top-nav ul, #products-panel{
-    display: flex;
-    flex-wrap: wrap;
-}
-#header-option{
-    display: flex;
-}
-#header-top .container{ 
-    display: flex;
-    justify-content: space-between;
-}
-
-#header-top{
-    padding: 17px 0;
-}
-#header-top-nav li a{
-    text-decoration: none;
-    padding: 0 15px;
-    border-right: 1px solid #fff;
-    font-size: 13px;
-    color: #fff;
-    font-family: 'penSans400';
-   }
-   #header-top-nav li:last-child a{
-    border-right: none;
-   }
-#header-option #language, #Currency{
-    padding: 0 8px 0 0;
-    font-size: 13px;
-    color: #fff;
-    font-family: 'OpenSansNormal';
-}
-#header-option #English, #USD{
-    padding: 0 4px 0 0;
-    font-size: 13px;
-    color: #fff;
-    font-family: 'OpenSans400';
-} 
-#header-option #optionCh {
-    padding: 0 22px 0 0;
-}
-#header-nav #tic, #basket{
-    background: #7cb020;
-}
-#header-nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-}
-#header-nav-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-#header-nav h1{
-    text-transform: uppercase;
-    color: #656565;
-    font-size: 36px;
-    font-family: 'OpenSans400'; 
-    font-weight: bold;
-    margin: 37px 0 37px 0;
-}
-
-#header-nav-nav ul li a{
-    text-decoration: none;
-    padding: 12px;
-    color: #656565;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: 'OpenSans400'; 
-    font-weight: bold;
-}
-#header-nav-nav ul {
-    margin: 48px 0 48px 0;
-}
-
-#search{
-    max-width: 175px;
-    position: relative;
-    width: 100%;
-    margin: 40px 10px 40px 0;
-}
-#search input{
-   
-    width: 100%;
-    height: 30px;
-}
-#search img {
-    position: absolute;
-    top: 9px;
-    right: 9px;
-}
-#cart, #amount{
-    font-family: 'OpenSans400'; 
-    font-weight: bold;
-    color: #656565;
-    text-transform: uppercase;
-    font-size: 14px;
-    padding: 0 0 0 5px;
-    margin: 40px 0 40px 0;
-    display: flex;
-    align-items: center;
-}
-#tic, #basket{
-    padding: 0 8px 0 6px;
-    margin: 39px 0 48px 0;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-}
-
-
-/* #Featured-container{
+    @font-face {
+        font-family: 'OpenSansNormal';
+        src: local('Open Sans Light'), local('OpenSans-Light'), url('fonts/opensans/opensanslight.woff2') format('woff2'), url('fonts/opensans/opensanslight.woff') format('woff'), url('fonts/opensans/opensanslight.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans';
+        src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url('opensanslightitalic.woff2') format('woff2'), url('opensanslightitalic.woff') format('woff'), url('opensanslightitalic.ttf') format('truetype');
+        font-weight: 300;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: 'OpenSans400';
+        src: local('Open Sans'), local('OpenSans'), url('fonts/opensans/opensans.woff2') format('woff2'), url('fonts/opensans/opensans.woff') format('woff'), url('fonts/opensans/opensans.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans';
+        src: local('Open Sans Italic'), local('OpenSans-Italic'), url('opensansitalic.woff2') format('woff2'), url('opensansitalic.woff') format('woff'), url('opensansitalic.ttf') format('truetype');
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans';
+        src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('opensanssemibold.woff2') format('woff2'), url('opensanssemibold.woff') format('woff'), url('opensanssemibold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans';
+        src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url('opensanssemibolditalic.woff2') format('woff2'), url('opensanssemibolditalic.woff') format('woff'), url('opensanssemibolditalic.ttf') format('truetype');
+        font-weight: 600;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans';
+        src: local('Open Sans Bold'), local('OpenSans-Bold'), url('opensansbold.woff2') format('woff2'), url('opensansbold.woff') format('woff'), url('opensansbold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans';
+        src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('opensansbolditalic.woff2') format('woff2'), url('opensansbolditalic.woff') format('woff'), url('opensansbolditalic.ttf') format('truetype');
+        font-weight: 700;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans';
+        src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('opensansextrabold.woff2') format('woff2'), url('opensansextrabold.woff') format('woff'), url('opensansextrabold.ttf') format('truetype');
+        font-weight: 800;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans';
+        src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'), url('opensansextrabolditalic.woff2') format('woff2'), url('opensansextrabolditalic.woff') format('woff'), url('opensansextrabolditalic.ttf') format('truetype');
+        font-weight: 800;
+        font-style: italic;
+    }
+    
+    #header-top {
+        background: #4cb2cb;
+    }
+    
+    .container {
+        max-width: 1000px;
+        margin: auto;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    #header-top-nav ul,
+    #products-panel {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #header-option {
+        display: flex;
+    }
+    
+    #header-top .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #header-top {
+        padding: 17px 0;
+    }
+    
+    #header-top-nav li a {
+        text-decoration: none;
+        padding: 0 15px;
+        border-right: 1px solid #fff;
+        font-size: 13px;
+        color: #fff;
+        font-family: 'penSans400';
+    }
+    
+    #header-top-nav li:last-child a {
+        border-right: none;
+    }
+    
+    #header-option #language,
+    #Currency {
+        padding: 0 8px 0 0;
+        font-size: 13px;
+        color: #fff;
+        font-family: 'OpenSansNormal';
+    }
+    
+    #header-option #English,
+    #USD {
+        padding: 0 4px 0 0;
+        font-size: 13px;
+        color: #fff;
+        font-family: 'OpenSans400';
+    }
+    
+    #header-option #optionCh {
+        padding: 0 22px 0 0;
+    }
+    
+    #header-nav #tic,
+    #basket {
+        background: #7cb020;
+    }
+    
+    #header-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #header-nav-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #header-nav h1 {
+        text-transform: uppercase;
+        color: #656565;
+        font-size: 36px;
+        font-family: 'OpenSans400';
+        font-weight: bold;
+        margin: 37px 0 37px 0;
+    }
+    
+    #header-nav-nav ul li a {
+        text-decoration: none;
+        padding: 12px;
+        color: #656565;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: 'OpenSans400';
+        font-weight: bold;
+    }
+    
+    #header-nav-nav ul {
+        margin: 48px 0 48px 0;
+    }
+    
+    #search {
+        max-width: 175px;
+        position: relative;
+        width: 100%;
+        margin: 40px 10px 40px 0;
+    }
+    
+    #search input {
+        width: 100%;
+        height: 30px;
+    }
+    
+    #search img {
+        position: absolute;
+        top: 9px;
+        right: 9px;
+    }
+    
+    #cart,
+    #amount {
+        font-family: 'OpenSans400';
+        font-weight: bold;
+        color: #656565;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 0 0 0 5px;
+        margin: 40px 0 40px 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    #tic,
+    #basket {
+        padding: 0 8px 0 6px;
+        margin: 39px 0 48px 0;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+    }
+    /* #Featured-container{
     width: 75%;
     min-height: 650px;
 } */
-#Sidebar{
-    width: 25%;
-    min-height: 340px;
-}
-
-#Glass-bg{
-    box-sizing: border-box;
-    background: #eff1f0;
-    width: 220px;
-    height: 200px;
-    display: flex;
-  align-items: center;
-  justify-content: center ;
-  margin: 0 0 10px 0;
-}
-#Glass-container{
-    width: 75%;
-    min-height: 650px;
-    display: flex;
-    flex-wrap: wrap;
-}
- #Glass-box{
-    width: 30%;
-    box-sizing: border-box;
-    min-width: 220px;
-    margin: 15px 15px 0 0;
-}
-#Glass-prise{
-    font-family: 'OpenSansNormal';
-    font-size: 18px;
-    color: #7db121;
-    position: absolute;
-    padding: 22px 0 0 0;
-}
-#Glass-basket{
-    background: #7db121;
-    border-radius: 25px;
-    width: 45px;
-    height: 45px;
     
-}
-#Glass-basket img{
-padding: 7px 0 0 9px;
-}
-#description{
-    font-family: 'OpenSansNormal';
-    font-size: 14px; 
-    width: 63%;
-}
-#prise-flex{
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    position: relative;
-}
-
-#footer-bg1{
-    background: #4cb2cb;
-}
-#footer-bg2{
-    background: #38a0b9;
-}
-#footer-bg3{
-    background: #0c4b5a;
-}
-
-#footer-top{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-#footer-top div{
-    background: #fff;
-    border-radius: 25px;
-    padding: 10px;
-    margin: 20px 20px 20px 0;
-}
-#footer-top p{
-    margin: 20px 0 20px 0;
-    margin: 35px 0 0px 0;
-    font-family: 'OpenSans400';
-    text-transform: uppercase;
-    font-size: 21px;
-    color: #fff;
-}
-
-@media(max-width: 750px){
-    #header-nav{
-       
-        justify-content: center; 
-    }
-    #header-nav-nav ul {
-        margin: 15px 0 15px 0;
-    }
-    #header-nav h1{
-       
-        margin: 15px 0 15px 0;
-    }
-    #search{
-        
-        margin: 11px 15px 11px 0;
-    }
-    .slider-bg img{ 
-        display: none;
-    }
-    #tic, #basket{
-    padding: 0px 6px 0px 6px;
-    margin: 12px 6px 11px 6px;
-              
-    }
-    #cart, #amount{
-        margin: 15px 0 15px 0;
-    
-   
+    #Sidebar {
+        width: 25%;
+        min-height: 340px;
     }
     
-}
-@media(max-width: 920px){
-    #Glass-prise{
-        padding: 35px 0 0 0;
+    #Glass-bg {
+        box-sizing: border-box;
+        background: #eff1f0;
+        width: 220px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 10px 0;
     }
-}
+    
+    #Glass-container {
+        width: 75%;
+        min-height: 650px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #Glass-box {
+        width: 30%;
+        box-sizing: border-box;
+        min-width: 220px;
+        margin: 15px 15px 0 0;
+    }
+    
+    #Glass-prise {
+        font-family: 'OpenSansNormal';
+        font-size: 18px;
+        color: #7db121;
+        position: absolute;
+        padding: 22px 0 0 0;
+    }
+    
+    #Glass-basket {
+        background: #7db121;
+        border-radius: 25px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    #Glass-basket img {
+        padding: 7px 0 0 9px;
+    }
+    
+    #description {
+        font-family: 'OpenSansNormal';
+        font-size: 14px;
+        width: 63%;
+    }
+    
+    #prise-flex {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        position: relative;
+    }
+    
+    #footer-bg1 {
+        background: #4cb2cb;
+    }
+    
+    #footer-bg2 {
+        background: #38a0b9;
+    }
+    
+    #footer-bg3 {
+        background: #0c4b5a;
+    }
+    
+    #footer-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #footer-top div {
+        background: #fff;
+        border-radius: 25px;
+        padding: 10px;
+        margin: 20px 20px 20px 0;
+    }
+    
+    #footer-top p {
+        margin: 20px 0 20px 0;
+        margin: 35px 0 0px 0;
+        font-family: 'OpenSans400';
+        text-transform: uppercase;
+        font-size: 21px;
+        color: #fff;
+    }
+    
+    @media(max-width: 750px) {
+        #Glass-container {
+            width: 100%;
+        }
+        #header-nav {
+            justify-content: center;
+        }
+        #header-nav-nav ul {
+            margin: 15px 0 15px 0;
+        }
+        #header-nav h1 {
+            margin: 15px 0 15px 0;
+        }
+        #search {
+            margin: 11px 15px 11px 0;
+        }
+        .slider-bg img {
+            display: none;
+        }
+        #tic,
+        #basket {
+            padding: 0px 6px 0px 6px;
+            margin: 12px 6px 11px 6px;
+        }
+        #cart,
+        #amount {
+            margin: 15px 0 15px 0;
+        }
+        #Sidebar img {
+            display: none;
+        }
+    }
+    
+    @media(max-width: 920px) {
+        #Glass-prise {
+            padding: 35px 0 0 0;
+        }
+    }
